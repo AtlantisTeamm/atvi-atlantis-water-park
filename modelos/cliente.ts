@@ -1,6 +1,7 @@
 import Documento from "./documento"
 import Endereco from "./endereco"
 import Telefone from "./telefone"
+import Agenda from "./agenda";
 
 export default class Cliente {
     public nome: string
@@ -12,5 +13,6 @@ export default class Cliente {
     public documentos: Documento[] = []
     public dependentes: Cliente[] = []
     public titular: Cliente
+    public agenda: Agenda;
 
 }
